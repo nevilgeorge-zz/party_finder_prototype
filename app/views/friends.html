@@ -6,8 +6,12 @@
 	</ul>
 	<h3 class="text-muted">Party Finder Prototype</h3>
 </div>
-<div class="jumbotron" ng-repeat="friend in friendList">
-  <p class="lead">
-    Please login below so you can see what your friends are up to!
-  </p>
+<div class="jumbotron friend" ng-repeat="friend in friendList">
+	<img class="friend-image" src="{{friend.image}}"/>
+  	<h3>
+    	{{friend.name}}
+  	</h3>
+  	<p class="lead">
+    	is at {{friend.location}} right now.
+  	</p>
 </div>
